@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apology</title>
-    <style>
+  <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
@@ -110,14 +110,10 @@
         <p>
             May I court you again and prove my love and commitment to you?👉🏻🥺👈🏻
         </p>
-        <div id="buttons-container">
-            <button type="button" onclick="handleResponse('yes')" class="button">Yes</button>
-            <button type="button" onclick="handleResponse('no')" class="button no">No</button>
-        </div>
-        <form id="apology-form" action="https://formspree.io/f/mqazkwea" method="POST">
+        <form action="https://formspree.io/f/mqazkwea" method="POST">
             <input type="hidden" name="_subject" value="Apology Response">
-            <!-- Hidden field to capture the response text -->
-            <input type="hidden" name="response_text" id="response-text-input">
+            <button type="submit" name="response" value="yes" class="button">Yes</button>
+            <button type="submit" name="response" value="no" class="button no">No</button>
         </form>
         <div id="success-message" class="success-message">
             Successfully submitted your answer! <span id="response-text" class="response"></span>
